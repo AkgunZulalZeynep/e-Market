@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Market - Shopping Online</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Bara de Navigare -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">e-Market</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acasă</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Produse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Caută Produs" aria-label="Search" id="search-input">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search-button">Caută</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Fotografie de Copertă -->
+    <div class="cover-photo text-center">
+        <img src="data:image/jpeg;base64,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" alt="e-Market Cover Photo" class="img-fluid">
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center">e-Market</h1>
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <div class="d-flex flex-wrap justify-content-center" id="category-buttons">
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="fructe-legume">Fructe, Legume</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="tigari">Țigări</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-curatenie">Produse de Curățenie</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-carne">Produse de Carne</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="gustari">Gustări</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-brutarie">Produse de Brutărie</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="bauturi">Băuturi</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-machiaj">Produse de Machiaj</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="inghetate">Înghețate</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-bebelusi">Produse pentru Bebeluși</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="alimente-uscate">Alimente Uscate</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="conserve">Conserve</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-lactate">Produse Lactate</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-mic-dejun">Produse pentru Mic Dejun</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-animale">Produse pentru Animale de Companie</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-ingrijire-personala">Produse de Îngrijire Personală</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="alimente-congelate">Alimente Congelate</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="suplimente-alimentare">Suplimente Alimentare</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-electronice">Produse Electronice</button>
+                    <button type="button" class="btn btn-outline-primary m-2" data-category="produse-casnice">Produse Casnice</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div class="row" id="products">
+                    <!-- Produsele vor fi încărcate aici -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>Coș de Cumpărături</h4>
+                <ul class="list-group" id="cart">
+                    <!-- Elementele coșului vor fi încărcate aici -->
+                </ul>
+                <h5 class="mt-3">Total: <span id="total">0</span> RON</h5>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

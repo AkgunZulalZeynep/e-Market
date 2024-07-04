@@ -1,0 +1,148 @@
+/* Genel Ayarlar */
+body {
+    background-color: #f4f4f9; /* Açık gri arka plan */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+}
+
+/* Navigasyon Çubuğu */
+.navbar {
+    background-color: #343a40; /* Koyu gri arka plan */
+}
+
+.navbar .nav-link, .navbar .navbar-brand {
+    color: #fff; /* Beyaz metin */
+}
+
+.navbar .nav-link:hover, .navbar .navbar-brand:hover {
+    color: #ddd; /* Açık gri metin hover durumu */
+}
+
+.form-inline .form-control {
+    width: 200px;
+}
+
+/* Kapak Fotoğrafı */
+.cover-photo {
+    height: 125px; /* Kapak fotoğrafı yüksekliği */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cover-photo img {
+    width: auto;
+    height: 100%;
+}
+
+/* Ana Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6f61; /* Kırmızımsı pembe başlık */
+}
+
+/* Kartlar */
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333; /* Koyu gri metin */
+}
+
+/* Butonlar */
+.btn-outline-primary {
+    min-width: 150px;
+    text-align: center;
+    border-color: #ff6f61; /* Kırmızımsı pembe kenarlık */
+    color: #ff6f61; /* Kırmızımsı pembe metin */
+}
+
+.btn-outline-primary:hover {
+    background-color: #ff6f61; /* Kırmızımsı pembe arka plan hover */
+    color: #fff; /* Beyaz metin hover */
+}
+
+.btn-primary {
+    background-color: #ff6f61; /* Kırmızımsı pembe arka plan */
+    border-color: #ff6f61;
+}
+
+.btn-primary:hover {
+    background-color: #e65b54; /* Daha koyu kırmızımsı pembe arka plan hover */
+    border-color: #e65b54;
+}
+
+.btn-secondary {
+    background-color: #ffd700; /* Altın sarısı arka plan */
+    border-color: #ffd700;
+}
+
+.btn-secondary:hover {
+    background-color: #e6c200; /* Daha koyu altın sarısı arka plan hover */
+    border-color: #e6c200;
+}
+
+.btn-danger {
+    background-color: #ff6f61; /* Kırmızımsı pembe arka plan */
+    border-color: #ff6f61;
+}
+
+.btn-danger:hover {
+    background-color: #e65b54; /* Daha koyu kırmızımsı pembe arka plan hover */
+    border-color: #e65b54;
+}
+
+/* Kategori Butonları */
+#category-buttons {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Ürün Kartları */
+#products .card {
+    margin-bottom: 20px;
+}
+
+/* Sepet */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item .item-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item .item-info span {
+    width: 100px;
+    text-align: center;
+}
+
+.list-group-item {
+    border: none;
+    padding: 10px 0;
+}
+
+.list-group-item .btn {
+    margin-left: 5px;
+}
